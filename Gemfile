@@ -61,3 +61,6 @@ end
 
 # Form page generation
 gem 'simple_form'
+
+# User authentication gem
+gem 'devise'
