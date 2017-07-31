@@ -5,8 +5,10 @@ Rails.application.routes.draw do
   resources :courses, only: [:index, :show]
 
   namespace :instructor do
+    resources :sections, only: []
     resources :courses, only: [:new, :create, :show] do
-      resources :sections, only: [:new, :create] do
+      resources :sections, only: [:new, :create]
+    end
         resources :lessons, only: [:new, :create]
       end
     end
