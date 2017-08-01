@@ -3,6 +3,9 @@ class Instructor::LessonsController < ApplicationController
 
   def new
     @section = Section.find(params[:section_id])
+    if @section.course.user != current_user
+      return render plain: 'Unauthorized', status: :unauthorized
+    end
     @lesson = Lesson.new
   end
 
