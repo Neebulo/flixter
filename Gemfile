@@ -77,6 +77,8 @@ gem "fog-aws"
 # image resolution
 gem "mini_magick"
 
+gem 'carrierwave-aws'
+
 
 
 
