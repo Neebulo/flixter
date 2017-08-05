@@ -67,3 +67,9 @@ gem 'devise'
 
 # image upload
 gem 'carrierwave', '~> 1.0'
+
+# Secure rails config info
+gem "figaro"
+
+# carrierwave comms with aws
+gem "fog-aws"
