@@ -73,3 +73,11 @@ gem "figaro"
 
 # carrierwave comms with aws
 gem "fog-aws"
+
+# image resolution
+gem "mini_magick"
+
+
+
+
+
