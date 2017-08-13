@@ -34,21 +34,21 @@
         <h3>
           <%= section.title %>
         </h3>
+        <div class="row">
 
-        <% section.lessons.each do |lesson| %>
-        <div class="col-12 col-sm-6">
-          <div class="lesson text-center">
-            <%= link_to lesson_path(lesson) do %>
-              <b><%= lesson.title %></b>
-              <br />
-              <%= lesson.subtitle %>
-            <% end %>
+          <% section.lessons.each do |lesson| %>
+           <div class="col-12 col-sm-6">
+             <div class="lesson text-center">
+              <%= link_to lesson_path(lesson) do %>
+                <b><%= lesson.title %></b>
+                <br />
+                <%= lesson.subtitle %>
+              <% end %>
+            </div>
           </div>
-        </div>
         <% end %>
       </div>
-    <% end %>
-
-  </div>
-
+    </div>
+  <% end %>
+ </div>
 </div>
