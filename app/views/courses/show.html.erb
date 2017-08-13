@@ -36,6 +36,7 @@
         </h3>
 
         <% section.lessons.each do |lesson| %>
+        <div class="col-12 col-sm-6">
           <div class="lesson text-center">
             <%= link_to lesson_path(lesson) do %>
               <b><%= lesson.title %></b>
@@ -43,6 +44,7 @@
               <%= lesson.subtitle %>
             <% end %>
           </div>
+        </div>
         <% end %>
       </div>
     <% end %>
