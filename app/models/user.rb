@@ -11,6 +11,9 @@ class User < ApplicationRecord
     enrolled_courses = []
     enrollments.each do |enrollment|
       enrolled_courses << enrollment.course
+    end
   end
+
+  return enrolled_courses.include?(course)
 
 end
