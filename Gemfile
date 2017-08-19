@@ -79,6 +79,9 @@ gem "mini_magick"
 
 gem 'carrierwave-aws'
 
+# payment
+gem 'stripe'
+
 
 
 
