@@ -3,7 +3,6 @@ class EnrollmentsController < ApplicationController
 
   def create
     current_user.enrollments.create(course: current_course)
-    redirect_to course_path(current_course)
 
      # Amount in cents
     @amount = 500
@@ -20,10 +19,11 @@ class EnrollmentsController < ApplicationController
       currency: 'usd'
     )
 
+  redirect_to course_path(current_course)
   rescue Stripe::CardError => e
     flash[:error] = e.message
     redirect_to root_path
-    
+
   end
 
 
