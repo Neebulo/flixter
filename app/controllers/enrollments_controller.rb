@@ -5,7 +5,7 @@ class EnrollmentsController < ApplicationController
     current_user.enrollments.create(course: current_course)
 
      # Amount in cents
-    @amount = 500
+    @amount = (current_course.cost * 100).to_i
 
     customer = Stripe::Customer.create(
       email: params[:stripeEmail],
