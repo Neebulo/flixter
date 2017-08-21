@@ -3,4 +3,6 @@ class Lesson < ApplicationRecord
 
   mount_uploader :video, VideoUploader
 
+  include RankedModel
+
 end
