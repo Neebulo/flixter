@@ -85,7 +85,7 @@ gem 'stripe'
 # reorder lesson positions for instructor
 gem 'ranked-model'
 
-
-
+# jquery for drag drop
+gem 'jquery-ui-rails'
 
 
