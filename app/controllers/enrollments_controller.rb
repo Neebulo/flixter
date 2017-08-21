@@ -15,7 +15,7 @@ class EnrollmentsController < ApplicationController
     charge = Stripe::Charge.create(
       customer: customer.id,
       amount: @amount,
-      description: 'Rails Stripe customer',
+      description: 'Flixter Premo Content',
       currency: 'usd'
     )
 
