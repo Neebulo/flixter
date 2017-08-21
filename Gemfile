@@ -82,6 +82,9 @@ gem 'carrierwave-aws'
 # payment
 gem 'stripe'
 
+# reorder lesson positions for instructor
+gem 'ranked-model'
+
 
 
 
