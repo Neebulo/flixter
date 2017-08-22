@@ -11,6 +11,13 @@ class Instructor::LessonsController < ApplicationController
     redirect_to instructor_course_path(current_section.course)
   end
 
+  def update
+  end
+
+
+
+
+
   private
 
   def require_authorized_for_current_section
