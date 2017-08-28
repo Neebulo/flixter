@@ -2,7 +2,7 @@
   $(function() {
     $('.lessons').sortable({
       update: function( event, ui ) {
-          alert("LessonId: " + ui.item.data('item-id') + " Index: " + ui.item.index());
+          alert("UpdateUrl: " + ui.item.data('update-url') + " Index: " + ui.item.index());
       }
     });
   });
