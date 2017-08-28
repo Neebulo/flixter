@@ -25,6 +25,12 @@ class Instructor::SectionsController < ApplicationController
     end
   end
 
+  def require_authorized_for_current_section
+    if current_section.course.user != current_user
+      render plain: "You are not the authorized user to edit these sections. Please hit the back button on your browser", status: :unauthorized
+    end
+  end
+
   def current_section
     @current_section ||= Section.find(params[:id]) 
   end
