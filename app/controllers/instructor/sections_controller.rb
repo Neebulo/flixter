@@ -11,6 +11,11 @@ class Instructor::SectionsController < ApplicationController
     redirect_to instructor_course_path(current_course)
   end
 
+  def update
+    current_section.update_attributes(section_params)
+    render plain: "Updated!"
+  end
+
   private
 
   def require_authorized_for_current_course
