@@ -25,6 +25,10 @@ class Instructor::SectionsController < ApplicationController
     end
   end
 
+  def current_section
+    @current_section ||= Section.find(params[:id]) 
+  end
+
   helper_method :current_course
   def current_course
     if params[:course_id]
