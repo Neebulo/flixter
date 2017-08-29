@@ -58,9 +58,12 @@
             <li data-update-url="<%= instructor_lesson_path(lesson) %>" >
               <span class="fa fa-ellipsis-v"></span>
               <i class="fa fa-tint" aria-hidden="true"></i>
-              <b><%= lesson.title %></b>
-              -
-              <%= lesson.subtitle %>
+                <p>
+                  <b><%= lesson.title %></b>
+                </p>
+                <p>
+                  <%= lesson.subtitle %>
+                </p>
             </li>
           <% end %>
         </ul>
