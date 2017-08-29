@@ -88,4 +88,6 @@ gem 'ranked-model'
 # jquery for drag drop
 gem 'jquery-ui-rails'
 
+# Font Awesome gem
+gem "font-awesome-rails"
 
