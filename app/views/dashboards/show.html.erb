@@ -8,5 +8,7 @@
     </h3>
 
     <%= image_tag course.image, class: 'img-fluid' %>
+    <%= course.description %>
+    <%= link_to "More Info...", course_path(course), class: 'btn btn-lg btn-primary' %>
   <% end %>
 </div>
