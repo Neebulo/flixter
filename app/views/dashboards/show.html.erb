@@ -19,4 +19,17 @@
     </div>
   </div>
  <% end %>
+
+ <h1>What I'm Teaching</h1>
+  <% current_user.courses.each do |course| %>
+    <h3 class="text-center">
+      <%= link_to course.title, course_path(course) %>
+    </h3>
+
+    <%= image_tag course.image, class: 'img-fluid' %>
+    <%= course.description %>
+    <%= link_to "More Info...", course_path(course), class: 'btn btn-lg btn-primary' %>
+
+  <% end %>
+
 </div>
