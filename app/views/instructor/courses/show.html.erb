@@ -55,7 +55,11 @@
           <i class="fa fa-hand-o-right fa-lg" aria-hidden="true"></i>
           <%= section.title %>
         </div>
-        <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'float-right btn btn-primary btn-sm' %>
+       
+        <!-- Lesson Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newLessonModal">
+          New Lesson...
+        </button>
 
         <br class="clr" />
         <br class="clr" />
@@ -118,10 +122,6 @@
 </div>
 
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newLessonModal">
-  New Lesson...
-</button>
 
 <!-- Lessons Modal -->
 <div class="modal fade" id="newLessonModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
