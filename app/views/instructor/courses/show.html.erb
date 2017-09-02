@@ -41,7 +41,10 @@
   <br class="clr" />
 
   <div class="text-center">
-    <%= link_to 'Add a new section...', new_instructor_course_section_path(current_course), class: 'btn btn-primary btn-lg' %>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newSectionModal">
+      Add a new section...
+    </button>
   </div>
 
   <ul class="sections">
@@ -88,10 +91,6 @@
 
 </div>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newSectionModal">
-  Add a new section...
-</button>
 
 <!-- Modal -->
 <div class="modal fade" id="newSectionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
