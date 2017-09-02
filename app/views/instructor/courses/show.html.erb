@@ -2,7 +2,8 @@
   $(function() {
 
     $('.new-lesson-button').click(function(event) {
-      alert( $( event.target).data('lesson-url')  );
+      var LessonUrl = ( $( event.target).data('lesson-url')  );
+      alert( lessonUrl );
     });
 
 
