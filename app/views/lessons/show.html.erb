@@ -9,7 +9,10 @@
   </p>
 <!-- shows only if there is a next lesson -->
   <% if current_lesson.next_lesson.present? %>
-    <%= link_to "Next Lesson", lesson_path(current_lesson.next_lesson), class: 'btn btn-default float-right' %>
+    <%= link_to lesson_path(current_lesson.next_lesson), class: 'btn btn-default float-right' do %>
+      Next Lesson
+      <span class="fa fa-forward"></span>
+    <% end %>
   <% end %>
 
   <br class="clr" />
