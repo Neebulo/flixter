@@ -6,4 +6,7 @@ class Lesson < ApplicationRecord
   include RankedModel
   ranks :row_order, with_same: :section_id
 
+  def next_lesson
+  end
+
 end
