@@ -3,7 +3,7 @@
 
     $('.new-lesson-button').click(function(event) {
       var LessonUrl = ( $( event.target).data('lesson-url')  );
-      alert( lessonUrl );
+      $('#newLessonForm').attr('action', lessonUrl);
     });
 
 
